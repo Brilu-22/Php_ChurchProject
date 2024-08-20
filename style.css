@@ -1,5 +1,6 @@
 /* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   padding: 0;
@@ -19,6 +20,17 @@ input {
   min-height: 100vh;
   background-color: #fff;
   overflow: hidden;
+}
+
+nav {
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .container:before {
@@ -70,13 +82,25 @@ form {
 
 form.sign-in-form {
   z-index: 2;
-  margin-top: -40px;
+  margin-top: -200px;
+}
+
+.logo img {
+  width: 130px;
+  height: 130px;
+  margin-top: -230px;
+  margin-left: 290px;
+}
+
+.logo2 img {
+  width: 130px;
+  height: 130px;
 }
 
 form.sign-up-form {
   z-index: 1;
   opacity: 0;
-  margin-top: -60px;
+  margin-top: -80px;
 }
 
 /* Titles and Inputs */
@@ -84,6 +108,7 @@ form.sign-up-form {
   font-size: 2.2rem;
   color: #444;
   margin-bottom: 10px;
+  font-family: "Bungee Shade";
 }
 
 .input-field {
@@ -124,7 +149,7 @@ form.sign-up-form {
   width: 150px;
   height: 49px;
   border: none;
-  border-radius: 49px;
+  border-radius: 10px;
   cursor: pointer;
   background-color: #8b4513;
   color: #fff;
@@ -132,6 +157,7 @@ form.sign-up-form {
   font-weight: 600;
   margin: 10px;
   transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .btn-solid:hover {
@@ -214,6 +240,7 @@ form.sign-up-form {
 .panel h3 {
   font-weight: 600;
   font-size: 1.5rem;
+  font-family: "Bungee Shade";
 }
 
 .panel p {
@@ -223,9 +250,10 @@ form.sign-up-form {
 
 .btn.transparent {
   background: none;
-  border-radius: 50px;
+  border-radius: 10px;
   border: 2px solid #fff;
   width: 130px;
+  color: aliceblue;
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
